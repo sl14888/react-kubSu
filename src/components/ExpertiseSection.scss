@@ -1,0 +1,151 @@
+.ExpertiseSection {
+    padding-top: 160px;
+    position: relative;
+    height: 650px;
+
+
+    &__wrapper {
+        position: absolute;
+        width: 100%;
+        top: -230px;
+        background: url(../images/Expertise__bg.png);
+        background-size: cover;
+        z-index: -1;
+        height: 840px;
+    }
+
+    &__contianer {
+        max-width: 1210px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    &__inner {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__img {
+        position: absolute;
+        width: 660px;
+        height: 517px;
+        left: 0;
+        bottom: -35px;
+    }
+
+    &__title {
+
+        color: #fff;
+        max-width: 480px;
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 51px;
+    }
+
+
+    &__group {
+        display: flex;
+
+        &-text {
+            font-weight: 500;
+            color: #fff;
+            position: relative;
+            margin-top: 68px;
+            font-size: 16px;
+            line-height: 22px;
+            opacity: 0.7;
+            max-width: 257px;
+
+            &:not(:last-child) {
+                margin-right: 44px;
+            }
+
+
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: -20px;
+                content: '';
+                height: 100px;
+                width: 3px;
+                background: var(--primary);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .ExpertiseSection {
+        &__img {
+            width: 428px;
+            height: 393px;
+        }
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .ExpertiseSection {
+        padding-top: 0px;
+
+        &__inner {
+            justify-content: flex-start;
+        }
+
+        &__content {
+            padding-left: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .ExpertiseSection {
+        &__img {
+            width: 400px;
+            height: 370px;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ExpertiseSection {
+        &__wrapper {
+            height: 940px;
+        }
+
+        &__group {
+            flex-direction: column;
+
+            &-text {
+                font-size: 14px;
+                margin-top: 55px;
+
+                &::after {
+                    height: 65px;
+                }
+            }
+        }
+
+        &__img {
+            bottom: -170px;
+        }
+
+        &__title {
+            font-size: 22px;
+            line-height: 30px;
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .ExpertiseSection {
+        &__img {
+            bottom: -105px;
+            width: 299px;
+            height: 289px;
+        }
+
+    }
+}

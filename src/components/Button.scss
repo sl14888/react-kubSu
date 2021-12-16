@@ -1,0 +1,54 @@
+.btn {
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    width: 220px;
+    height: 60px;
+
+}
+
+
+.btn--primary {
+    border-radius: 5px;
+    color: var(--primary);
+    background: transparent;
+    transition: all 0.3s ease-out;
+    border: 2px solid #F14D34;
+
+    &:hover {
+        color: #fff;
+        background: #F14D34;
+    }
+}
+
+
+.btn--solid {
+    background-color: var(--primary);
+    transition: all 0.3s;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    border: 2px solid #F14D34;
+
+    &:hover {
+        color: var(--primary);
+        background: transparent;
+        border: 2px solid #F14D34;
+    }
+}
+
+.btn--medium {
+    width: 220px;
+    height: 60px;
+}
+
+.btn--large {
+    width: 260px;
+    height: 60px;
+}
+
+.btn--Big {
+    width: 480px;
+    height: 60px;
+}

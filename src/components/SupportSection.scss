@@ -1,0 +1,102 @@
+.SupportSection {
+    padding-top: 160px;
+
+    &__container {
+        max-width: 1210px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        max-width: 406px;
+        margin: 0 auto 56px;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 51px;
+        text-align: center;
+        color: var(--main-black);
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__item {
+        &-box {
+            background-color: #fff;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            max-width: 292px;
+            height: 292px;
+            padding: 27px 35px 64px 25px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            box-shadow: 10px 6px 26px 5px rgba(34, 60, 80, 0.2);
+
+            &:not(:nth-child(4n+4)) {
+                margin-right: 5px;
+            }
+        }
+
+        &-num {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            color: var(--main-black);
+            opacity: 0.5;
+        }
+
+        &-title {
+            width: 200px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: var(--main-black);
+            padding-bottom: 12px;
+        }
+
+        &-text {
+            z-index: 1;
+            font-size: 16px;
+            line-height: 22px;
+            color: var(--main-black);
+            opacity: 0.7;
+        }
+
+        &-img {
+            z-index: 0;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .SupportSection {
+        &__title {
+            max-width: 100%;
+            line-height: 35px;
+            font-size: 26px;
+        }
+
+        &__item {
+            &-box {
+                max-width: 100%;
+            }
+
+            &-title {
+                width: 100%;
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            &-num {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

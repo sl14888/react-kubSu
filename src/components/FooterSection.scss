@@ -1,0 +1,31 @@
+.FooterSection {
+    padding-top: 69px;
+    position: relative;
+
+    &__line {
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        opacity: 0.3;
+        border: 1px solid #fff;
+    }
+
+    &__container {
+        max-width: 1210px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    &__content {
+        height: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        color: #fff;
+        font-size: 14px;
+        line-height: 17px;
+        opacity: 0.5;
+    }
+}

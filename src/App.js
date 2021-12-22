@@ -3,6 +3,7 @@ import HeaderSection from './components/HeaderSection';
 import ExpertiseSection from './components/ExpertiseSection';
 import PartnersSection from './components/PartnersSection';
 import SupportSection from './components/SupportSection';
+import FormSection from './components/FormSection';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <ExpertiseSection />
       <PartnersSection />
       <SupportSection />
+      <FormSection />
     </>
   );
 }

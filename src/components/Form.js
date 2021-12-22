@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+import { Button } from './Button';
 import '../App.scss';
 
 import { useForm } from 'react-hook-form';
+import Swal from 'sweetalert2';
 
 function Form() {
   const {
@@ -15,6 +18,49 @@ function Form() {
   });
 
   const onSubmit = (data) => {
+    setBtnDisable(true);
+    changeText();
+    console.log('Submit', data);
+    localStorage.setItem('имя', data.firstName);
+    localStorage.setItem('телефон', data.Phone);
+    localStorage.setItem('почта', data.Email);
+    localStorage.setItem('текcт', data.textArea);
+    localStorage.setItem('чекбокс', data.checkBox);
+
+    axios
+      .post('https://formcarry.com/s/U1_4O8sQsWN', data, {
+        headers: { Accept: 'application/json' },
+      })
+      .then(function (response) {
+        console.log(response);
+        setLoadActive(initialState);
+        setBtnDisable(false);
+        Swal.fire({
+          title: 'Получилось!',
+          text: 'Форма успешно отправлена!',
+          icon: 'success',
+        });
+        reset({});
+      })
+      .catch(function (error) {
+        console.log(error);
+        setLoadActive(initialState);
+        setBtnDisable(false);
+        Swal.fire({
+          icon: 'error',
+          title: 'Что-то пошло не так!',
+          text: 'Попробуйте ещё раз',
+        });
+      });
+  };
+  const initialState = 'Оставить заявку!';
+  const [loadActive, setLoadActive] = useState(initialState);
+
+  const changeText = () => {
+    setLoadActive(<i className="fa fa-spinner fa-spin"></i>);
+  };
+  const [btnDisable, setBtnDisable] = useState(false);
+
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="FormSection__form">
       <input
@@ -113,6 +159,14 @@ function Form() {
           данных
         </p>
       </label>
+      <Button
+        disabled={btnDisable}
+        type="submit"
+        buttonStyle="btn--solid"
+        buttonSize="btn--Big"
+      >
+        {loadActive}
+      </Button>
     </form>
   );
 }

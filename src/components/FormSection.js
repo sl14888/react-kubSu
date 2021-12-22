@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.scss';
 import './FormSection.scss';
+import FooterSection from './FooterSection';
 
 import Form from './Form';
 function FormSection() {
@@ -35,6 +36,7 @@ function FormSection() {
             <Form />
           </div>
         </div>
+        <FooterSection />
         <div id="output" className="container"></div>
       </div>
     </div>

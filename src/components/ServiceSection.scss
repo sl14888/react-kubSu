@@ -1,0 +1,202 @@
+.ServiceSection{
+    padding-top: 100px;
+
+    &__container {
+        max-width: 1210px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    &__title{
+        width: 580px;
+        height: 155px;
+        font-size: 42px;
+        line-height: 51px;
+        color: var(--main-black);
+        font-weight: 700;
+    }
+
+    &__text{
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 500px;
+        color: var(--main-black);
+        opacity: 0.7;
+        margin-bottom: 10px;
+    }
+
+    &__item{
+        &-box{
+            max-width: 180px;
+            margin-top: 50px;
+            margin-right: 100px;
+        }
+        &-text{
+            opacity: 0.7;
+            color: var(--main-black);
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &-img{
+            margin-bottom: 25px;
+        }
+    }
+
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1140px){
+    .ServiceSection{
+        &__title{
+            margin: 0 auto;
+            text-align: center;
+            font-size: 37px;
+            line-height: 47px;
+            width: 100%;
+        }
+        &__text{
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            line-height: 19px;
+        }
+        &__item{
+            &-box{
+                margin-left: 100px;
+                &:not(:nth-child(2n+1)){
+                    margin-right: 150px;
+                }
+                &:not(:nth-child(2n)){
+                    margin-left: 150px;
+                }
+            }
+            &-img{
+                display: block;
+                margin: 0 auto;
+            }
+            &-text{
+                text-align: center;
+                font-size: 14px;
+            }
+        }
+        &__items{
+            justify-content: space-between;
+        }
+    }
+}
+@media screen and (max-width: 880px){
+    .ServiceSection{
+        &__title{
+            font-size: 35px;
+            line-height: 61px;
+        }
+        &__text{
+            font-size: 13px;
+        }
+        &__item{
+            &-box{
+            margin-left: 100px;
+            &:not(:nth-child(2n+1)){
+                margin-left: 0;
+            }
+            &:not(:nth-child(2n)){
+                margin-right: 0;
+                }
+            }
+        &-text{
+            font-size: 13px;
+        }
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    .ServiceSection{
+        &__title{
+            font-size: 31px;
+            line-height: 42px;
+        }
+        &__text{
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        &__item{
+            &-box{
+            margin-left: 100px;
+            &:not(:nth-child(2n+1)){
+                margin: 0;
+            }
+            &:not(:nth-child(2n)){
+                margin: 0;
+                }
+            }
+        &-text{
+            font-size: 13px;
+        }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .ServiceSection{
+        &__title{
+            font-size: 27px;
+            line-height: 45px;
+        }
+        &__text{
+            font-size: 12px;
+            margin-bottom: 25px;
+        }
+        &__items{
+            justify-content: center;
+        }
+        &__item{
+            &-box{
+                padding-bottom: 10px;
+            &:not(:nth-child(2n+1)){
+                margin: 0;
+            }
+            &:not(:nth-child(2n)){
+                margin: 0;
+                }
+            }
+        &-text{
+            font-size: 13px;
+        }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    .ServiceSection{
+        &__title{
+            font-size: 23px;
+            line-height: 37px;
+        }
+        &__text{
+            font-size: 10px;
+            margin-bottom: 25px;
+        }
+        &__items{
+            justify-content: center;
+        }
+        &__item{
+            &-box{
+                margin-left: 100px;
+                &:not(:nth-child(2n+1)){
+                    margin-right: 150px;
+                }
+                &:not(:nth-child(2n)){
+                    margin-left: 150px;
+                }
+            }
+        &-text{
+            font-size: 13px;
+        }
+        }
+    }
+}
+

@@ -166,3 +166,176 @@
         }
     }
 }
+@media screen and (max-width: 425px){
+    .CasesSection{
+        &__title{
+            text-align: center;
+        }
+        &__items{
+            flex-direction: column;
+        }
+        &__item{
+            &-box {
+                min-width: 425px;
+                margin: 0 auto;
+                margin-top: 10px;
+                &:not(:nth-child(2n+1)) {
+                    min-width: 425px;
+                    height: 100%;
+                }
+            }
+            &-img{
+                display: block;
+                margin: 0 auto;
+                width: 405px;
+            }
+            &-Nimg{
+                max-width: 405px;
+                max-height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+            &-Ctitle{
+                position: static;
+                max-width: 425px;
+                text-align: center;
+                padding: 0;
+            }
+            &-text{
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 0;
+                text-align: center;
+            }
+            &-dat{
+                position: static;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .CasesSection{
+        &__title{
+            text-align: center;
+            width: 350px;
+            font-size: 20px;
+        }
+        &__items{
+            flex-direction: column;
+        }
+        &__item{
+            &-box {
+                min-width: 350px;
+                margin: 0 auto;
+                margin-top: 10px;
+                &:not(:nth-child(2n+1)) {
+                    min-width: 350px;
+                    height: 100%;
+                }
+            }
+            &-title{
+            top: 130px;
+            font-size: 17px;
+            }
+            &-img{
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+            }
+            &-Nimg{
+                max-width: 350px;
+                max-height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+            &-Ctitle{
+                position: static;
+                max-width: 350px;
+                text-align: center;
+                padding: 0;
+            }
+            &-Btitle{
+                top: 355px;
+            }
+            &-text{
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 0;
+                text-align: center;
+            }
+            &-dat{
+                position: static;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    .CasesSection{
+        &__title{
+            text-align: center;
+            width: 300px;
+            font-size: 20px;
+        }
+        &__items{
+            flex-direction: column;
+        }
+        &__item{
+            &-box {
+                min-width: 320px;
+                margin: 0 auto;
+                margin-top: 10px;
+                &:not(:nth-child(2n+1)) {
+                    min-width: 320px;
+                    height: 100%;
+                }
+            }
+            &-title{
+            top: 130px;
+            }
+            &-img{
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+            }
+            &-Nimg{
+                max-width: 300px;
+                max-height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+            &-Ctitle{
+                position: static;
+                max-width: 300px;
+                text-align: center;
+                padding: 0;
+            }
+            &-Btitle{
+                top: 355px;
+            }
+            &-text{
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 0;
+                text-align: center;
+            }
+            &-dat{
+                position: static;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}

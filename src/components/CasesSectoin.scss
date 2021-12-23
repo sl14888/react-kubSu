@@ -1,0 +1,341 @@
+.CasesSection .btn--primary{
+    color: var(--main-black);
+    font-size: 12px;
+    line-height: 12px;
+    border: 1px solid rgba(5, 12, 51, 0.2);;
+}
+
+.CasesSection{
+    margin-top: 185px;
+
+    &__container{
+        max-width: 1220px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    &__btn{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__title{
+        width: 431px;
+        margin: 185px auto 60px;
+        font-size: 42px;
+        line-height: 51px;
+        color: var(--main-black);
+        font-weight: 700;
+        }
+
+    &__items{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    &__item{
+        &-box {
+            max-width: 380px;
+            height: 475px;
+            margin-top: 20px;
+            position: relative;
+            margin-right: 20px;
+            &:not(:nth-child(2n+1)) {
+                max-width: 780px;
+                height: 475px;
+            }
+        }
+
+        &-title {
+            max-width: 320px;
+            height: 44px;
+            position: absolute;
+            bottom: 0;
+            left: 40px;
+            top: 391px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+
+        &-Ctitle {
+            position: absolute;
+            color: var(--main-black);
+            font-size: 18px;
+            line-height: 22px;
+            padding-left: 30px;
+            max-width: 320px;
+            margin-top: 40px;
+            height: 44px;
+            top: 215px;
+            font-weight: 700;
+        }
+
+        &-Btitle{
+            max-width: 320px;
+            height: 44px;
+            position: absolute;
+            bottom: 0;
+            left: 40px;
+            top: 361px;
+            color: #fff;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+
+        &-dat{
+            margin-top: 89px;
+            padding-left: 30px;
+            position: absolute;
+            opacity: 0.5;
+            font-size: 12px;
+            line-height: 15px;
+            color: var(--main-black);
+            font-weight: 700;
+        }
+
+        &-Cdat{
+            position: absolute;
+            opacity: 0.5;
+            font-size: 12px;
+            line-height: 15px;
+            color: #fff;
+            left: 40px;
+            top: 410px;
+            font-weight: 700;
+        }
+
+        &-text {
+            margin-top: 124px;
+            padding-left: 30px;
+            opacity: 0.7;
+            color: var(--main-black);
+            font-size: 14px;
+            line-height: 22px;
+            max-width: 341px;
+        }
+    }
+}
+
+@media screen and (max-width: 1219px){
+    .CasesSection{
+        &__title{
+            text-align: center;
+        }
+        &__items{
+            flex-direction: column;
+        }
+        &__item{
+            &-box {
+                margin: 0 auto;
+                margin-top: 10px;
+                min-width: 780px;
+            }
+            &-img{
+                display: block;
+                margin: 0 auto;
+            }
+            &-Nimg{
+                min-width: 100%;
+                max-height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+            }
+            &-Ctitle{
+                position: static;
+                max-width: 100%;
+                text-align: center;
+                padding: 0;
+            }
+            &-text{
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 0;
+                text-align: center;
+            }
+            &-dat{
+                position: static;
+                padding: 0;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 425px){
+    .CasesSection{
+        &__title{
+            text-align: center;
+        }
+        &__items{
+            flex-direction: column;
+        }
+        &__item{
+            &-box {
+                min-width: 425px;
+                margin: 0 auto;
+                margin-top: 10px;
+                &:not(:nth-child(2n+1)) {
+                    min-width: 425px;
+                    height: 100%;
+                }
+            }
+            &-img{
+                display: block;
+                margin: 0 auto;
+                width: 405px;
+            }
+            &-Nimg{
+                max-width: 405px;
+                max-height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+            &-Ctitle{
+                position: static;
+                max-width: 425px;
+                text-align: center;
+                padding: 0;
+            }
+            &-text{
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 0;
+                text-align: center;
+            }
+            &-dat{
+                position: static;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 375px){
+    .CasesSection{
+        &__title{
+            text-align: center;
+            width: 350px;
+            font-size: 20px;
+        }
+        &__items{
+            flex-direction: column;
+        }
+        &__item{
+            &-box {
+                min-width: 350px;
+                margin: 0 auto;
+                margin-top: 10px;
+                &:not(:nth-child(2n+1)) {
+                    min-width: 350px;
+                    height: 100%;
+                }
+            }
+            &-title{
+            top: 130px;
+            font-size: 17px;
+            }
+            &-img{
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+            }
+            &-Nimg{
+                max-width: 350px;
+                max-height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+            &-Ctitle{
+                position: static;
+                max-width: 350px;
+                text-align: center;
+                padding: 0;
+            }
+            &-Btitle{
+                top: 355px;
+            }
+            &-text{
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 0;
+                text-align: center;
+            }
+            &-dat{
+                position: static;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    .CasesSection{
+        &__title{
+            text-align: center;
+            width: 300px;
+            font-size: 20px;
+        }
+        &__items{
+            flex-direction: column;
+        }
+        &__item{
+            &-box {
+                min-width: 320px;
+                margin: 0 auto;
+                margin-top: 10px;
+                &:not(:nth-child(2n+1)) {
+                    min-width: 320px;
+                    height: 100%;
+                }
+            }
+            &-title{
+            top: 130px;
+            }
+            &-img{
+                display: block;
+                margin: 0 auto;
+                width: 300px;
+            }
+            &-Nimg{
+                max-width: 300px;
+                max-height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+            &-Ctitle{
+                position: static;
+                max-width: 300px;
+                text-align: center;
+                padding: 0;
+            }
+            &-Btitle{
+                top: 355px;
+            }
+            &-text{
+                margin: 0 auto;
+                margin-top: 20px;
+                padding: 0;
+                text-align: center;
+            }
+            &-dat{
+                position: static;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-kubSu/static/css/main.e7979ee3.chunk.css",
+    "main.js": "/react-kubSu/static/js/main.0ad0a8a5.chunk.js",
+    "main.js.map": "/react-kubSu/static/js/main.0ad0a8a5.chunk.js.map",
+    "runtime-main.js": "/react-kubSu/static/js/runtime-main.6e0dcc76.js",
+    "runtime-main.js.map": "/react-kubSu/static/js/runtime-main.6e0dcc76.js.map",
+    "static/css/2.2a7f5157.chunk.css": "/react-kubSu/static/css/2.2a7f5157.chunk.css",
+    "static/js/2.ea429fb1.chunk.js": "/react-kubSu/static/js/2.ea429fb1.chunk.js",
+    "static/js/2.ea429fb1.chunk.js.map": "/react-kubSu/static/js/2.ea429fb1.chunk.js.map",
+    "index.html": "/react-kubSu/index.html",
+    "static/css/2.2a7f5157.chunk.css.map": "/react-kubSu/static/css/2.2a7f5157.chunk.css.map",
+    "static/css/main.e7979ee3.chunk.css.map": "/react-kubSu/static/css/main.e7979ee3.chunk.css.map",
+    "static/js/2.ea429fb1.chunk.js.LICENSE.txt": "/react-kubSu/static/js/2.ea429fb1.chunk.js.LICENSE.txt",
+    "static/media/ExpertiseSection.scss": "/react-kubSu/static/media/Expertise__bg.aa0e267c.png",
+    "static/media/FormSection.scss": "/react-kubSu/static/media/Form__bg.7306d54c.png",
+    "static/media/TopSection.scss": "/react-kubSu/static/media/Top__bg.15f4e2fa.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e0dcc76.js",
+    "static/css/2.2a7f5157.chunk.css",
+    "static/js/2.ea429fb1.chunk.js",
+    "static/css/main.e7979ee3.chunk.css",
+    "static/js/main.0ad0a8a5.chunk.js"
+  ]
+}
